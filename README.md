@@ -1,8 +1,11 @@
 # Cmd-Pal-for-the-web
 
-A free lightweight, zero-dependency, high-performance, unstyled command search library, designed to be customizable with optional built-in features, built for React 19+ and TypeScript.
+A free lightweight, high-performance, unstyled command search library, designed to be customizable with optional built-in features, built for React 19+ and TypeScript inspired by Raycast, and cmdk.
 
-![Command Palette Demo](./example.mp4)
+<video width="100%" autoplay muted loop controls>
+  <source src="example.mp4" type="video/mp4">
+</video>
+
 
 ## Features
 
