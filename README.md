@@ -14,22 +14,6 @@ https://github.com/user-attachments/assets/9dd4098a-eeeb-4312-aa8f-89457d3d0690
 - **Accessible** - Full keyboard navigation and screen reader support
 - **Developer Friendly** - TypeScript, comprehensive API, and extensive documentation
 
-## Installation
-
-```bash
-npm install cmd-pal-for-the-web
-# or
-yarn add cmd-pal-for-the-web
-# or
-pnpm add cmd-pal-for-the-web
-```
-
-### Peer Dependencies
-
-```bash
-npm install react react-dom
-```
-
 ## Setup
 
 ### 1. Render the Command Palette
