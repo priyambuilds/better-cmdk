@@ -2,9 +2,7 @@
 
 A free lightweight, high-performance, unstyled command search library, designed to be customizable with optional built-in features, built for React 19+ and TypeScript inspired by Raycast, and cmdk.
 
-<video width="100%" autoplay muted loop controls>
-  <source src="https://raw.githubusercontent.com/priyambuilds/better-cmdk/main/example.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/9dd4098a-eeeb-4312-aa8f-89457d3d0690
 
 
 ## Features
