@@ -1,0 +1,128 @@
+/* Default styles for command palette components */
+/* Import this file if you want pre-styled components */
+/* Otherwise, components are completely headless */
+
+@import 'tailwindcss';
+
+/* Command Dialog Container */
+.cmd-dialog {
+  @apply w-full max-w-[640px] bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 overflow-hidden flex flex-col;
+}
+
+/* Command Input Container */
+.cmd-input {
+  @apply relative flex items-center border-b border-gray-200 dark:border-gray-800;
+}
+
+.cmd-input-default {
+  @apply relative flex items-center border-b border-gray-200 dark:border-gray-800;
+}
+
+.cmd-input .cmd-input-icon {
+  @apply pl-4 pr-3 text-gray-400;
+}
+
+.cmd-input .cmd-input-icon svg {
+  @apply w-5 h-5;
+}
+
+.cmd-input input {
+  @apply flex-1 py-4 pr-4 text-lg bg-transparent outline-none;
+}
+
+.cmd-input input::placeholder {
+  @apply text-gray-400 dark:text-gray-500;
+}
+
+/* Command List */
+.cmd-list {
+  @apply max-h-[400px] overflow-y-auto overflow-x-hidden py-2;
+}
+
+/* Command Item */
+.cmd-item {
+  @apply px-4 py-3 flex items-center gap-3 cursor-pointer text-sm transition-colors;
+}
+
+.cmd-item:hover:not([data-disabled]) {
+  @apply bg-gray-50 dark:bg-gray-800;
+}
+
+.cmd-item[data-active] {
+  @apply bg-blue-50 dark:bg-blue-900/30 text-blue-900 dark:text-blue-100;
+}
+
+.cmd-item[data-disabled] {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* Command Empty State */
+.cmd-empty {
+  @apply flex flex-col items-center justify-center gap-0.5 p-3;
+}
+
+.cmd-empty p:first-of-type {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.cmd-empty p:last-of-type {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+/* Modal Overlay */
+.cmd-overlay {
+  @apply fixed inset-0 z-50 flex items-start justify-center p-4 bg-black/50 backdrop-blur-sm pt-[20vh];
+}
+
+.cmd-modal {
+  @apply w-full max-w-[42rem] overflow-hidden bg-white border border-gray-200 rounded-lg shadow-2xl;
+}
+
+/* PortalRenderer Styles */
+.portal-header > div {
+  @apply px-4 py-2;
+}
+.portal-header-info > span {
+  @apply text-sm text-gray-500;
+}
+
+.portal-command-item {
+  @apply flex items-center gap-3;
+}
+.portal-command-icon {
+  /* No specific styles needed */
+}
+.portal-command-content {
+  @apply flex-1;
+}
+.portal-command-name {
+  @apply font-medium;
+}
+.portal-command-description {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.portal-state-display > div:first-child {
+  @apply mb-3 text-4xl;
+}
+.portal-state-display > p:first-of-type {
+  @apply mb-2 text-lg font-medium;
+}
+.portal-state-display > p:last-of-type {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.portal-empty-state > div:first-child {
+  @apply mb-4 text-4xl;
+}
+.portal-empty-state > p:first-of-type {
+  @apply mb-2 text-lg font-medium;
+}
+.portal-empty-state > p:last-of-type {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+/* CommandEmpty Styles */
+.command-empty {
+  @apply px-4 py-8 text-center text-sm text-gray-500 dark:text-gray-400;
+}
